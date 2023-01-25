@@ -8,7 +8,7 @@ if TYPE_CHECKING:
     from dvc_objects.fs.base import AnyFSPath, FileSystem
 
 TEXT_CHARS = bytes(range(32, 127)) + b"\n\r\t\f\b"
-DEFAULT_CHUNK_SIZE = 512
+DEFAULT_CHUNK_SIZE = 4096
 
 
 def istextblock(block: bytes) -> bool:
